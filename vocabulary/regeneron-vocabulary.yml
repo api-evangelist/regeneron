@@ -1,0 +1,24 @@
+vocabulary: regeneron
+description: Vocabulary for Regeneron Pharmaceuticals' therapeutic and research areas
+terms:
+  - term: EYLEA
+    definition: Aflibercept anti-VEGF therapy for retinal diseases
+  - term: EYLEA HD
+    definition: High-dose aflibercept formulation for extended dosing intervals
+  - term: Dupixent
+    definition: Dupilumab IL-4/IL-13 monoclonal antibody co-developed with Sanofi
+  - term: Libtayo
+    definition: Cemiplimab anti-PD-1 monoclonal antibody for oncology
+  - term: Lynozyfic
+    definition: Linvoseltamab T-cell engager for multiple myeloma
+  - term: Praluent
+    definition: Alirocumab PCSK9 inhibitor for cardiovascular disease
+  - term: Regeneron Genetics Center
+    definition: Regeneron's large-scale exome sequencing and human genetics research arm
+  - term: VelocImmune
+    definition: Regeneron's proprietary platform for fully human antibody discovery
+dimensions:
+  - name: therapeutic-area
+    values: [Ophthalmology, Immunology, Oncology, RareDisease, Cardiovascular, InfectiousDisease, Neurology]
+  - name: modality
+    values: [MonoclonalAntibody, TCellEngager, AntibodyCocktail, GeneTherapy]
