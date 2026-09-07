@@ -49,6 +49,12 @@ modified: '2026-05-16'
 specificationVersion: '0.23'
 apis: []
 common:
+  - type: Research
+    url: https://www.regeneron.com/science/genetics-center
+  - type: GitHub
+    url: https://github.com/rgcgithub
+  - type: GitHub
+    url: https://github.com/regeneron-mpds
   - type: DomainSecurity
     url: security/regeneron-domain-security.yml
   - type: GitHubOrganization
