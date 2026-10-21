@@ -85,6 +85,142 @@ edges:
     detected: '2026-10-20'
   detected_by: sweep-cell-gene-therapy.py
   first_seen: '2026-10-20'
+- partner_name: FDA Drugs@FDA (approved drug and biologic applications)
+  partner: null
+  partner_match: register
+  type: contract
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125559
+  category: FDA drug / biologic application holder
+  contract_reference:
+    register: Drugs@FDA (openFDA drug/drugsfda; application holder = sponsor_name)
+    standard: FDA drug / biologic marketing application (21 CFR 314 / 601)
+    spec_file: null
+    role: fda-application-holder
+    registered_name: REGENERON PHARMACEUTICALS
+    matched_domain: regeneron.com
+    matched_by: domain
+    certified_products:
+    - product: Biologics License Application (approved) (Drugs@FDA)
+      product_type: BLA
+      lapsed: false
+      products_sample:
+      - DUPIXENT
+      - EVKEEZA
+      - EYLEA
+      - EYLEA HD
+      - INMAZEB
+      - LIBTAYO
+    applications_sample:
+    - BLA125387
+    - BLA125559
+    - BLA761055
+    - BLA761097
+    - BLA761169
+    signal_note: certified_products = one entry per application TYPE (NDA / ANDA / BLA), never per application;
+      lapsed when every product under the type is Discontinued. Applications are context, never counted
+    detected_by: sweep-clinical-trial-sponsors.py
+    detected: '2026-10-21'
+    identity: wikidata Q7308054 'Regeneron Pharmaceuticals' P856 https://www.regeneron.com/
+    identity_source: wikidata P856 (labelled provenance step; Kin 2026-10-15 decision 1)
+    other_registrations:
+    - REGENERON PHARMACEUTICALS, INC
+  detected_by: sweep-clinical-trial-sponsors.py
+  first_seen: '2026-10-21'
+- partner_name: ClinicalTrials.gov (industry trial sponsors and collaborators)
+  partner: null
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://clinicaltrials.gov/study/NCT07850921
+  category: Interventional trial sponsor / collaborator
+  contract_reference:
+    register: ClinicalTrials.gov API v2 (interventional, started >= 2021-01-01, industry lead sponsor or collaborator)
+    standard: null
+    spec_file: null
+    role: trial-collaborator+lead-sponsor
+    registered_name: Regeneron Pharmaceuticals
+    matched_domain: regeneron.com
+    matched_by: domain
+    lead_sponsor: true
+    active_trial: true
+    latest_start: '2027-06-28'
+    trials_sample:
+    - NCT07850921
+    - NCT07559513
+    - NCT07450183
+    - NCT05202288
+    - NCT07887750
+    signal_note: 'PARTICIPATION only (a trial is not an approval): lead_sponsor, active_trial and latest_start are
+      per-edge signals; the number of trials is never counted'
+    detected_by: sweep-clinical-trial-sponsors.py
+    detected: '2026-10-21'
+    identity: wikidata Q7308054 'Regeneron Pharmaceuticals' P856 https://www.regeneron.com/
+    identity_source: wikidata P856 (labelled provenance step; Kin 2026-10-15 decision 1)
+  detected_by: sweep-clinical-trial-sponsors.py
+  first_seen: '2026-10-21'
+- partner_name: EU CTIS (clinical trial sponsors)
+  partner: null
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://euclinicaltrials.eu/ctis-public/view/2025-524861-26-00
+  category: EU clinical trial sponsor
+  contract_reference:
+    register: EU Clinical Trials Information System public search (euclinicaltrials.eu, sponsorType 'Pharmaceutical
+      company')
+    standard: null
+    spec_file: null
+    role: eu-trial-sponsor
+    registered_name: Regeneron Pharmaceuticals Inc.
+    matched_domain: regeneron.com
+    matched_by: domain
+    trials_sample:
+    - 2025-524861-26-00
+    - 2025-521617-97-00
+    - 2025-521618-25-00
+    - 2025-522954-37-00
+    - 2025-524860-39-00
+    signal_note: 'PARTICIPATION only: a CTIS sponsor listing; the number of trials is never counted'
+    detected_by: sweep-clinical-trial-sponsors.py
+    detected: '2026-10-21'
+    identity: wikidata Q7308054 'Regeneron Pharmaceuticals' P856 https://www.regeneron.com/
+    identity_source: wikidata P856 (labelled provenance step; Kin 2026-10-15 decision 1)
+  detected_by: sweep-clinical-trial-sponsors.py
+  first_seen: '2026-10-21'
+- partner_name: CDISC (members)
+  partner: cdisc
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  partner_tier: Pharmaceutical
+  evidence: https://www.cdisc.org/company/regeneron
+  category: Clinical data standards member
+  contract_reference:
+    register: CDISC member search (cdisc.org/members/search + public company page website)
+    standard: CDISC clinical data standards (SDTM / ADaM / CDASH / ODM)
+    spec_file: null
+    role: cdisc-member
+    registered_name: Regeneron
+    register_id: regeneron
+    member_industry: Pharmaceutical
+    listed_website: http://www.regeneron.com/
+    matched_domain: regeneron.com
+    matched_by: domain
+    signal_note: 'self-filed paid membership: listing alone = standard-participant (standards adopter); partner_tier
+      is the membership level, never weighted as a tier; hand-reviewed'
+    detected_by: sweep-clinical-trial-sponsors.py
+    detected: '2026-10-21'
+  detected_by: sweep-clinical-trial-sponsors.py
+  first_seen: '2026-10-21'
 generated: '2026-10-20'
 method: searched
 source:
@@ -97,3 +233,6 @@ checked:
 - https://members.alliancerm.org/Online/Directory/Member-Directory.aspx?WebsiteKey=0a8f86de-1bef-4044-be59-e2f7f1c52e39
 - https://www.ema.europa.eu/en/documents/report/medicines-output-medicines-report_en.xlsx
 - https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/approved-cellular-and-gene-therapy-products
+- https://api.fda.gov/drug/drugsfda.json
+- https://euclinicaltrials.eu/ctis-public/search
+- https://www.cdisc.org/members/search
