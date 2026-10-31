@@ -1,4 +1,4 @@
-# Regeneron (regeneron)
+# Regeneron
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,29 +64,86 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Regeneron Pharmaceuticals is a leading biotechnology company that invents, develops, and commercializes life-transforming medicines, including EYLEA in ophthalmology, Dupixent in immunology (with Sanofi), and Libtayo and Lynozyfic in oncology. Regeneron does not publish a public developer API; its Regeneron Genetics Center collaborates on large-scale genomic research via the UK Biobank and partner platforms.
+Regeneron Pharmaceuticals is a leading biotechnology company that invents, develops, and commercializes life-transforming medicines, including EYLEA and EYLEA HD for ophthalmology, Dupixent in immunology (co-developed with Sanofi), Libtayo and Lynozyfic in oncology and hematology, and Praluent for cardiovascular disease. Regeneron does not publish a public developer API; its Regeneron Genetics Center collaborates on large-scale genomic research via the UK Biobank, DiscovEHR, and partner platforms rather than a self-hosted API.
 
-**URL:** [https://www.regeneron.com/](https://www.regeneron.com/)
+**Areas:** Pharmaceuticals · Biotechnology · Healthcare · Genomics
 
-**Clinical Trials:** [https://clinicaltrials.regeneron.com/](https://clinicaltrials.regeneron.com/)
+## Regeneron on APIs.io
 
-**Genetics Center:** [https://www.regeneron.com/science/regeneron-genetics-center](https://www.regeneron.com/science/regeneron-genetics-center)
+Everything profiled for Regeneron is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/regeneron/](https://apis.io/providers/regeneron/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### Published properties
 
-- Pharmaceutical, Biotechnology, Healthcare, Genomics
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Vocabulary (1)
 
-No public developer APIs.
+The provider's domain terms, defined.
 
-## Artifacts
+- [Regeneron Vocabulary](https://apis.io/vocabularies/regeneron/regeneron-vocabulary/)
 
-| Type | Path |
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Regeneron Domain Security](https://apis.io/security/regeneron/regeneron-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.regeneron.com/)
+- [GitHub](https://github.com/regeneron-mpds)
+
+## API Evangelist rating
+
+**Kin Score 5.4** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
 |---|---|
-| Vocabulary | [vocabulary/regeneron-vocabulary.yml](vocabulary/regeneron-vocabulary.yml) |
+| Discoverability | 39.3 |
+| Contract quality | 0.0 |
+| Contract governance | 13.6 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 0.0 |
+| Access clarity | 0.0 |
 
-## Timestamps
+**Agent readiness 0.0** — human-only
 
-- **Created:** 2026-05-05
-- **Modified:** 2026-05-16
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 8.6** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/regeneron/](https://apis.io/providers/regeneron/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Regeneron: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/regeneron/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
